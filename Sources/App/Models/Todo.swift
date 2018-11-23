@@ -10,14 +10,14 @@ final class Todo: SQLiteModel {
     var name: String
     var position: String
     var represents: String
-    var ratFucker: String
-    var gerrymander: String
-    var voterSupression: String
-    var ratKing: String
-    var ratKiller: String
+    var ratFucker: Bool
+    var gerrymander: Bool
+    var voterSupression: Bool
+    var ratKing: Bool
+    var ratKiller: Bool
 
     /// Creates a new `Todo`.
-    init(id: Int? = nil, name: String, position: String, represents: String, ratFucker: String, gerrymander: String, voterSupression: String, ratKing: String, ratKiller: String) {
+    init(id: Int? = nil, name: String, position: String, represents: String, ratFucker: Bool, gerrymander: Bool, voterSupression: Bool, ratKing: Bool, ratKiller: Bool) {
         self.id = id
         self.name = name
         self.position = position
